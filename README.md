@@ -10,4 +10,4 @@ Feel free to reference the information in this repository if you are taking the 
 * Python
 
 ## Special Thanks ##
- * State Street for rejecting me from a Python developer position without an interview two days before I finished this course. Happy Thanksgiving to you too :blue_heart:
+ * State Street for rejecting me from a Python developer position without an interview two days before I finished this course :blue_heart:
