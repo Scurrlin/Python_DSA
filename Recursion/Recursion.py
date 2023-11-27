@@ -1,4 +1,4 @@
-# Recursion is a function that calls itself until it doesn't... lmao okay bro
+# Recursion is a function that calls itself until it doesn't
 
 # Pseudocode explaining gift box and ball analogy:
 
