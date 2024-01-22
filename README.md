@@ -1,4 +1,4 @@
-## Python Data Structures and Algorithms ##
+# Python Data Structures and Algorithms ##
 
 This repository contains my notes as well as solutions to the exercises in the Udemy course [Python Data Structures & Algorithms + LEETCODE Exercises](https://www.udemy.com/course/data-structures-algorithms-python/) by Scott Barrett.
 
