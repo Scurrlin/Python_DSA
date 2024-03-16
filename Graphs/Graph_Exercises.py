@@ -1,10 +1,14 @@
 # Graphs are groups of Vertices(nodes) connected by Edges(connections)
 
-# Weighted edges can exist in graphs. Weighted edges are analagous to different routes in Google Maps. Route B might be faster than Route A even though the total distance in Route B is greater. In this scenario, Route A has a "heavier" weight.
+# Weighted edges can exist in graphs. Weighted edges are analagous to different
+# routes in Google Maps. Route B might be faster than Route A even though the
+# total distance in Route B is greater. In this scenario, Route A has a
+# "heavier" weight.
 
 # Edges are either directional or bi-directional
 
-# Graphs can be visualized as either an "Adjacency Matrix" or an "Adjacency List"
+# Graphs can be visualized as either an "Adjacency Matrix" or an "Adjacency
+# List"
 
 # Graph: Add Vertex
 
