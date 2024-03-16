@@ -20,7 +20,7 @@ print("num2 =", num2)
 print("\nnum1 points to:", id(num1))
 print("num2 points to:", id(num2))
 
-# Integers are immutable
+# Integers are Immutable
 
 dict1 = {
     'value: 11'
@@ -44,4 +44,4 @@ print("dict2 =", dict2)
 print("\ndict1 points to:", id(dict1))
 print("dict2 points to:", id(dict2))
 
-# Dictionaries ARE mutable
+# Dictionaries are Mutable
