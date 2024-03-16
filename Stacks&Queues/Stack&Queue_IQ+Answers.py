@@ -30,26 +30,27 @@ def is_balanced_parentheses(parentheses):
     return stack.is_empty()
 
 def is_balanced_parentheses(parentheses):
-    # Create a new stack
+
+# Create a new stack
     stack = Stack()
  
-    # Iterate over each character in the string
+# Iterate over each character in the string
     for p in parentheses:
-        # If the character is an opening parenthesis, 
-        # push it onto the stack
+        
+# If the character is an opening parenthesis, push it onto the stack
         if p == '(':
             stack.push(p)
-        # If the character is a closing parenthesis, 
-        # pop the top element off the stack
-        # and check if it matches the opening parenthesis
+        
+# If the character is a closing parenthesis, pop the top element off the stack
+# and check if it matches the opening parenthesis
         elif p == ')':
-            # If the stack is empty or the top element 
-            # is not an opening parenthesis,
-            # the parentheses are not balanced
+            
+# If the stack is empty or the top element is not an opening parenthesis, the
+# parentheses are not balanced
             if stack.is_empty() or stack.pop() != '(':
                 return False
  
-    # If the stack is empty, the parentheses are balanced
+# If the stack is empty, the parentheses are balanced
     return stack.is_empty()
 
 # Stack: Reverse String
@@ -67,20 +68,22 @@ def reverse_string(string):
     return reversed_string
 
 def reverse_string(string):
-    # create a new stack
+    
+# create a new stack
     stack = Stack() 
-    # create an empty string to store the reversed string       
+
+# create an empty string to store the reversed string       
     reversed_string = ""   
  
-    # push each character in the string onto the stack
+# push each character in the string onto the stack
     for char in string:
         stack.push(char)
  
-    # pop each character off the stack and append it to the reversed string
+# pop each character off the stack and append it to the reversed string
     while not stack.is_empty():
         reversed_string += stack.pop()
  
-    # return the reversed string
+# return the reversed string
     return reversed_string
 
 # Stack: Sort Stack
@@ -100,24 +103,28 @@ def sort_stack(stack):
         stack.push(additional_stack.pop())
 
 def sort_stack(stack):
-    # Create a new stack to hold the sorted elements
+
+# Create a new stack to hold the sorted elements
     additional_stack = Stack()
  
-    # While the original stack is not empty
+# While the original stack is not empty
     while not stack.is_empty():
-        # Remove the top element from the original stack
+        
+# Remove the top element from the original stack
         temp = stack.pop()
  
-        # While the additional stack is not empty and 
-        #the top element is greater than the current element
+# While the additional stack is not empty and the top element is greater than
+# the current element
+        
         while not additional_stack.is_empty() and additional_stack.peek() > temp:
-            # Move the top element from the additional stack to the original stack
+
+# Move the top element from the additional stack to the original stack
             stack.push(additional_stack.pop())
  
-        # Add the current element to the additional stack
+# Add the current element to the additional stack
         additional_stack.push(temp)
  
-    # Copy the sorted elements from the additional stack to the original stack
+# Copy the sorted elements from the additional stack to the original stack
     while not additional_stack.is_empty():
         stack.push(additional_stack.pop())
 
@@ -131,14 +138,15 @@ def enqueue(self, value):
         self.stack1.append(self.stack2.pop())
 
 def enqueue(self, value):
-    # Transfer all elements from stack1 to stack2
+    
+# Transfer all elements from stack1 to stack2
     while len(self.stack1) > 0:
         self.stack2.append(self.stack1.pop())
     
-    # Add the new element to the bottom of stack1
+# Add the new element to the bottom of stack1
     self.stack1.append(value)
     
-    # Transfer all elements back from stack2 to stack1
+# Transfer all elements back from stack2 to stack1
     while len(self.stack2) > 0:
         self.stack1.append(self.stack2.pop())
 
@@ -151,11 +159,14 @@ def dequeue(self):
         return self.stack1.pop()
 
 def dequeue(self):
-    # Check if the queue is empty
+
+# Check if the queue is empty
     if self.is_empty():
-        # Return None if the queue is empty
+        
+# Return None if the queue is empty
         return None
     else:
-        # Remove and return the last element in stack1
-        # which is the first element in the queue
+
+# Remove and return the last element in stack1, which is the first element in
+# the queue
         return self.stack1.pop()
