@@ -3,11 +3,15 @@
 # Tables are dictionaries of key-value pairs
 # Hashes are "one way" and "deterministic"
 
-# Collisions occur when you put a key-value pair at an "address" that already contains a key-value pair
+# Collisions occur when you put a key-value pair at an "address" that already
+# contains a key-value pair
 
-# The technique for dealing with collisions by simply authorizing two key-value pairs to occupy the same "address" is referred to as "Separate Chaining"
+# The technique for dealing with collisions by simply authorizing two key-value
+# pairs to occupy the same "address" is referred to as "Separate Chaining"
 
-# Another way to deal with collisions is to parse through each indiviual address within the table until you find an unoccupied address. This is referred to as "Linear Probing"
+# Another way to deal with collisions is to parse through each indiviual address
+# within the table until you find an unoccupied address. This is referred to as
+# "Linear Probing"
 # "Linear Probing" is a form of "open addressing"
 
 # You can use Linked Lists to make Separate Chaining more efficient
